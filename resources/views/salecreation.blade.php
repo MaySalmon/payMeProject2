@@ -2,7 +2,7 @@
 
 @section('content')
 
-{{$errors}}
+
 
 <form action="creation" method="POST">
 
@@ -26,6 +26,11 @@
             <option value= "eur">EUR</option>
         </select>
         
+    </li>
+    <li style="color: red" >
+        @foreach($errors->all() as $a)
+            <li>{{$a}}</li>
+        @endforeach
     </li>
     <li>
         <input type="submit" value="Insert payment details" />

@@ -32,11 +32,10 @@
     </li>
 </ul>
     <div class="iframe-container">
-        <iframe src="https://preprod.paymeservice.com/sale/generate/SALE1617-1047289L-HLAC6QO2-P2RXXORP" name="myFrame" height="600" width="600"></iframe>
+        <iframe src="https://preprod.paymeservice.com/sale/generate/SALE1617-1047289L-HLAC6QO2-P2RXXORP" name="myFrame" height="600" width="600"></iframe>      
+            <iframe name="myFrame2" height="600" width="600" frameborder="0"></iframe>
      </div>
-     <div class="iframe-container">
-        <iframe name="myFrame2" height="600" width="600"></iframe>
-     </div>
+     
 </form>
 
 @endsection 

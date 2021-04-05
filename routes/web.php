@@ -25,15 +25,6 @@ Route::get('/salecreation', function () {
     return view('salecreation');
 });
 
-
-Route::post('/api', function () {
-    return view('api');
-});
-
-
-Route::view('form','salecreation');
-
-
 Route::get('table', [SaleController::class,'show']);
 
 Route::get('fetch', [SaleController::class,'fetch']);

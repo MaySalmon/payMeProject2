@@ -21,17 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("list/{id?}", [DeviceController::class, 'list']);
 
-Route::post("add", [DeviceController::class, 'add']);
-
-Route::put("update", [DeviceController::class, 'update']);
-
-Route::get("search/{name}", [DeviceController::class, 'search']);
-
-Route::delete("delete/{id}", [DeviceController::class, 'delete']);
-
-Route::post("save", [DeviceController::class, 'testData']);
-
-Route::apiResource("member", MemberController::class);
 

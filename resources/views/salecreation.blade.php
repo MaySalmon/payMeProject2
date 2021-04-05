@@ -28,14 +28,11 @@
         <input type="submit" value="Insert payment details" />
     </li>
     <li>
-        <a href="https://preprod.paymeservice.com/sale/generate/SALE1617-1047289L-HLAC6QO2-P2RXXORP" target="myFrame">click here To Pay</a>
-    </li>
-    <li>
-        <a href="/table" target="myFrame">click here to see the sales table</a>
+        <a href="table" target="myFrame1">click here to see the sales table</a>
     </li>
 </ul>
     <div class="iframe-container">
-        <iframe  name="myFrame" height="600" width="600" frameborder="0"></iframe>
+        <iframe name="myFrame1" height="600" width="600" frameborder="0"></iframe>
      </div>
 </form>
 

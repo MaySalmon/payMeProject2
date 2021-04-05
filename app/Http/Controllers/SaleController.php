@@ -27,20 +27,7 @@ class SaleController extends Controller
             'language' => "en" 
         ]);
          $req = json_decode($response->body());
-         echo $req->sale_url;
-         echo $req->payme_sale_code;
-         echo $_POST['currency'];
-         echo $_POST['productname'];
-        // foreach($quizzes as $quiz){
-        //         $question = new Question;
-        //         $question->question = $quiz->question;
-        //         $question->answer_a = $quiz->answers->answer_a;
-        //         $question->answer_b = $quiz->answers->answer_b;
-        //         $question->answer_c = $quiz->answers->answer_c;
-        //         $question->answer_d = $quiz->answers->answer_d;
-        //         $question->save();
-         //}
-        // return "DONE";
+        
         
           $sale= new Sale;
           $sale->payme_sale_id= $req->payme_sale_id;
@@ -56,8 +43,7 @@ class SaleController extends Controller
           $sale->language="en";
           $result=$sale->save();
         
-
-
+        //redirect to salecreation page with an open iframe of payment form 
         return view('salecreationwithpayment');
 
     }

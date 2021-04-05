@@ -2,7 +2,10 @@
 
 @section('content')
 
+{{$errors}}
+
 <form action="creation" method="POST">
+
 <ul class="form-style-1">
     <h1>New Sale Creation</h1>
     @csrf

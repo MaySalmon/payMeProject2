@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Validator;
 
 use App\Models\Sale;
 
@@ -15,8 +16,14 @@ class SaleController extends Controller
        $data= Sale::all();
        return view('table', ['sales'=>$data]);
     }
-    public function fetch()
+    public function fetch(Request $request)
     {
+        $request->validate([
+            'productname'=>'required',
+            'price'=>'required',
+            'currency'=>'required'
+        ]);
+        
         $response = Http::post('https://preprod.paymeservice.com/api/generate-sale', [
             'seller_payme_id' =>'MPL14985-68544Z1G-SPV5WK2K-0WJWHC7N',
             'seller_payme_id' => 'MPL14985-68544Z1G-SPV5WK2K-0WJWHC7N', 

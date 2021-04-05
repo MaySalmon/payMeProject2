@@ -42,13 +42,20 @@ class SaleController extends Controller
          //}
         // return "DONE";
         
-        $sale= new Sale;
-        $sale->payme_sale_id=Input::get['$req->payme_sale_id'];
-        //$sale->product_name=$_POST['productname'];
-        //$sale->sale_price= 13200;
-        //$sale->currency= $_POST['currency'];
-        //$sale->sale_url= "d";
-        $result=$sale->save();
+          $sale= new Sale;
+          $sale->payme_sale_id= $req->payme_sale_id;
+          $sale->product_name=$_POST['productname'];
+          $sale->sale_price= $_POST['price'];
+          $sale->currency= $_POST['currency'];
+          $sale->sale_url= $req->sale_url;
+          $sale->seller_payme_id= "MPL14985-68544Z1G-SPV5WK2K-0WJWHC7N";
+          $sale->installments =1;
+          $sale->payme_sale_code = $req->payme_sale_code;
+          $sale->sale_paymet_method="abc";
+          $sale->transaction_id ="";
+          $sale->language="en";
+          $result=$sale->save();
+        
 
 
         return view('salecreationwithpayment');

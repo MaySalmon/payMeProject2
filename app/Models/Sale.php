@@ -9,4 +9,5 @@ use Illuminate\Support\Facades\Http;
 class Sale extends Model
 {
     use HasFactory;
+    public $timestamps=false;
 }

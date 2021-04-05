@@ -25,6 +25,11 @@ body{
 	border: 6px solid #305A72;
 }
 
+.form-style-1 .err {
+    color: pink;
+
+}
+
 
 .form-style-1 li {
 	padding: 0;

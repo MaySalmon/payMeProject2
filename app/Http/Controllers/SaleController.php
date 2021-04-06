@@ -16,6 +16,13 @@ class SaleController extends Controller
        $data= Sale::all();
        return view('table', ['sales'=>$data]);
     }
+
+    function showWitoutLinks()
+    {    
+       $data= Sale::all();
+       return view('tableiframe', ['sales'=>$data]);
+    }
+
     public function fetch(Request $request)
     {
         $request->validate([

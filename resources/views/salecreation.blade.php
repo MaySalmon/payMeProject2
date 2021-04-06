@@ -38,7 +38,7 @@
         <input type="submit" value="Insert payment details" />
     </li>
     <li>
-        <a href="table" target="myFrame1">click here to see the sales table</a>
+        <a href="tableiframe" target="myFrame1">click here to see the sales table</a>
     </li>
 </ul>
     <div class="iframe-container">

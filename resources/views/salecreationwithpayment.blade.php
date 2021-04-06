@@ -2,6 +2,14 @@
 
 @section('content')
 
+<div class="nav">
+    <a href="/">Back to Home page</a>
+</div>
+
+<div class="nav">
+    <a href="/table">Go to Sales page</a>
+</div>
+
 <form action="creation" method="POST">
 <ul class="form-style-1">
     <h1>New Sale Creation</h1>
@@ -28,7 +36,7 @@
         <input type="submit" value="Insert payment details" />
     </li>
     <li>
-        <a href="/table" target="myFrame2">click here to see the sales table</a>
+        <a href="/tableiframe" target="myFrame2">click here to see the sales table</a>
     </li>
 </ul>
     <div class="iframe-container">

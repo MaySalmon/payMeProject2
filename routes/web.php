@@ -28,6 +28,8 @@ Route::get('/salecreation', function () {
 
 Route::get('table', [SaleController::class,'show']);
 
+Route::get('tableiframe', [SaleController::class,'showWitoutLinks']);
+
 Route::get('fetch', [SaleController::class,'fetch']);
 
 Route::post('creation', [SaleController::class, 'fetch']);

@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-<div><a href="/">Back To Home Page</a></div>
-<div><a href="salecreation">Back To Sale Creation Page</a></div>
+<ul class="nav">
+    <img src="/img/PayMe_logo.png" alt="paymelogo" height="70" width="150">
+    <li><a href="/">Back to Home page</a></li>
+</ul>
+
 <div class="block">
 
         <h3>Sales<h3>

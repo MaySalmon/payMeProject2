@@ -2,13 +2,14 @@
 
 @section('content')
 
-<div class="nav">
-    <a href="/">Back to Home page</a>
-</div>
 
-<div class="nav">
-    <a href="/table">Go to Sales page</a>
-</div>
+
+<ul class="nav">
+    <img src="/img/PayMe_logo.png" alt="paymelogo" height="70" width="150">
+    <li><a href="/">Back to Home page</a></li>
+    <li><a href="/table">Go to Sales page</a></li>
+</ul>
+
 
 <form action="creation" method="POST">
 <ul class="form-style-1">

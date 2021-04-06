@@ -15,6 +15,7 @@
                 <td>Amount</td>
                 <td>Currency</td>
                 <td>Payment Link</td>
+                <td>Edit Product</td>   
                 <td>Delete Product</td>
             </tr>
             </thead>
@@ -26,6 +27,7 @@
                 <td>{{ $sale['sale_price']}}</td>
                 <td>{{ $sale['currency']}}</td>
                 <td>{{ $sale['sale_url']}}</td>
+                <td><a href="/click_edit/{{$sale->product_name}}">Edit</a></td>
                 <td><a href="/click_delete/{{$sale->product_name}}">Delete</a></td>
             </tr>
             @endforeach

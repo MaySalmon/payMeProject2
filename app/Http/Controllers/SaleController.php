@@ -67,6 +67,23 @@ class SaleController extends Controller
         DB::delete('delete from sales where product_name = ?', [$product_name]);
         return redirect('table');
     }
+
+    public function edit_function($product_name)
+    {
+        
+        $sale= DB::select('select * from sales where product_name = ?',[$product_name]);
+        return view('saleedit', ['sales'=>$sale]);
+    }
+
+    public function update_function(Request $req, $product_name)
+    {
+          $productnewname = $req->input('productname');
+          $productnewprice = $req->input('price');
+          $productnewcurrency = $req->input('currency');
+          DB::update('update sales set product_name = ?, sale_price = ?, currency= ? where product_name = ?',
+           [$productnewname, $productnewprice, $productnewcurrency, $product_name]);
+         return redirect('table');
+    }
 }
 
     

@@ -37,3 +37,7 @@ Route::post('creation', [SaleController::class, 'fetch']);
 Route::view('creation', "/salecreation");
 
 Route::get('click_delete/{product_name}',[SaleController::class, 'delete_function']);
+
+Route::get('click_edit/{product_name}',[SaleController::class, 'edit_function']);
+
+Route::post('click_edit/saleupdate/{product_name}',[SaleController::class, 'update_function']);

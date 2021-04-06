@@ -2,6 +2,7 @@
 
 @section('content')
 
+
 <div class="nav">
     <a href="/">Back to Home page</a>
 </div>

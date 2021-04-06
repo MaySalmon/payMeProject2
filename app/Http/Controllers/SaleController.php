@@ -5,7 +5,7 @@ use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Validator;
-
+use DB;
 use App\Models\Sale;
 
 
@@ -53,6 +53,12 @@ class SaleController extends Controller
         //redirect to salecreation page with an open iframe of payment form 
         return view('salecreationwithpayment');
 
+    }
+
+    public function delete_function($product_name)
+    {
+        DB::delete('delete from sales where product_name = ?', [$product_name]);
+        return redirect('table');
     }
 }
 

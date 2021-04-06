@@ -15,6 +15,10 @@ body{
 	margin:0;
 }
 
+.nav{
+	text-align: left;
+}
+
 
 .form-style-1 {
 	margin:10px auto;
@@ -25,10 +29,7 @@ body{
 	border: 6px solid #305A72;
 }
 
-.form-style-1 .err {
-    color: pink;
 
-}
 
 
 .form-style-1 li {

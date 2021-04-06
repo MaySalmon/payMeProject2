@@ -25,6 +25,7 @@ Route::get('/salecreation', function () {
     return view('salecreation');
 });
 
+
 Route::get('table', [SaleController::class,'show']);
 
 Route::get('fetch', [SaleController::class,'fetch']);
@@ -32,3 +33,5 @@ Route::get('fetch', [SaleController::class,'fetch']);
 Route::post('creation', [SaleController::class, 'fetch']);
 
 Route::view('creation', "/salecreation");
+
+Route::get('click_delete/{product_name}',[SaleController::class, 'delete_function']);
